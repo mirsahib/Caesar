@@ -1,8 +1,10 @@
 try:
 	from tkinter import *
+	from tkinter import messagebox
 except ImportError:
 	from Tkinter import *
-from tkinter import messagebox
+	from Tkinter import messagebox
+
 
 root=Tk()
 root.title('The Caesar Cipher')
