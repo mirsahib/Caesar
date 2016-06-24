@@ -3,7 +3,6 @@ Name:The Caesar Cipher
 Version:0.1(beta)
 Author:Mir Sahib
 '''
-
 try:
 	from tkinter import *
 	from tkinter import messagebox
@@ -62,7 +61,13 @@ def delete_text(event):
 		plaintext_entry.config(fg='black')
 
 def about():
-	messagebox.showinfo(title='About',message="The Caesar Cipher Beta v0.1\nCopyright@ MIR SAHIB 2016-17")
+	top = Toplevel(root)
+	top.title("About")
+	top.geometry('320x150+200+250')
+	top_label = Label(top,text='The Caear Cipher',font=("Times", 12, "bold")).pack(pady=10)
+	copy_label = Label(top,text='Copyright @ 2016-17 MIR SAHIB',font=("Times", 10)).pack(pady=10)
+	ver_label = Label(top,text='Version:0.1, Stable build 1001',font=("Times", 8)).pack(pady=5)
+
 
 
 #menubar
